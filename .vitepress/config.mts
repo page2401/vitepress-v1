@@ -26,7 +26,8 @@ export default withMermaid(
         { text: '← 返回对比总站', link: 'https://page.2401.xyz/' },
         { text: '01. 标注', link: '/01-annotations' },
         { text: '02. 流程图', link: '/02-diagrams' },
-        { text: '03. 公式', link: '/03-math' }
+        { text: '03. 公式', link: '/03-math' },
+        { text: '04. 目录结构', link: '/04-directory/' }
       ],
       sidebar: [
         {
@@ -35,7 +36,22 @@ export default withMermaid(
             { text: '00. 版本与基准概览', link: '/' },
             { text: '01. 专属标注与元数据', link: '/01-annotations' },
             { text: '02. 流程图与时序图', link: '/02-diagrams' },
-            { text: '03. 数学公式排版', link: '/03-math' }
+            { text: '03. 数学公式排版', link: '/03-math' },
+            {
+              text: '04. 目录结构与路由取舍',
+              collapsed: false,
+              items: [
+                { text: '不可能三角总览', link: '/04-directory/' },
+                {
+                  text: 'nested 子目录（手写配置）',
+                  collapsed: false,
+                  items: [
+                    { text: 'A. 文件名前缀排序代价', link: '/04-directory/nested/01-prefix-order' },
+                    { text: 'B. 手写侧边栏与孤岛页', link: '/04-directory/nested/02-manual-sidebar' }
+                  ]
+                }
+              ]
+            }
           ]
         }
       ],

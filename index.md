@@ -26,6 +26,9 @@ features:
   - title: "03. 构建期 MathJax 3 矢量公式"
     details: "配置 markdown: { math: true } 并安装 markdown-it-mathjax3@4.3.2 即可在构建期直接产出内联 SVG 公式，客户端零运行时开销。"
     link: /03-math
+  - title: "04. 浅平铺目录与纯手写侧边栏"
+    details: "支持零层级平铺但需手动配置 srcExclude: ['README.md'] 防误编译；无内置自动侧边栏，多级嵌套需手写维护 config.mts。"
+    link: /04-directory/
 ---
 
 ## 子模块版本档案
